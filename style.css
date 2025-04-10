@@ -1,0 +1,134 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('./images/vector-pattern-different-doodles-hand-drawn-elements_597910-240.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#theScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+#topBox, #middleBox, #bottomBox {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#topBox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    min-height: 180px;
+    padding: 15px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;   
+    gap: 10px;             
+    margin-bottom: 10px;   
+}
+
+#nowButton,
+#todayButton,
+#selectDateButton {
+    padding: 10px 15px;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+#currentTempDisplay {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#weatherIcon {
+    height: 70%;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+
+
+
+
+#selectDate {
+    position: relative;
+}
+
+#dateDropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid gray;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    display: none;
+    width: 100px;
+    z-index: 10;
+}
+
+#dateDropdown div {
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+#dateDropdown div:hover {
+    background: lightgray;
+}
+
+#middleBox {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.stats {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-align: left;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#bottomBox {
+    height: 300px;
+    position: relative;
+}
+
+#diagramma {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+

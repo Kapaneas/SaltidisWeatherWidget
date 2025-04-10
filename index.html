@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+
+        <div id="theScreen">
+            <div id="topBox">
+                <div id="buttons">
+                    <button id="nowButton">Now</button>
+                    <button id="todayButton">Today</button>
+                    <div id="selectDate">
+                        <button id="selectDateButton">Select Date ▼</button>
+                    </div>
+                </div>
+                <div id="currentTempDisplay"></div>
+                <img id="weatherIcon" src="" alt="Weather Icon" />
+            </div>
+            
+        <div id="middleBox">
+            <div class="stats" id="tempFeelsLike"> </div>
+            <div class="stats" id="windSpeed"></div>
+            <div class="stats" id="windGust"></div>
+            <div class="stats" id="windDeg"></div>
+            <div class="stats" id="humidity"></div>
+            <div class="stats" id="pressure"></div>
+        </div>
+        <div id="bottomBox">
+            <canvas id="diagramma"></canvas>
+        </div>
+        
+        </div>
+      
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
